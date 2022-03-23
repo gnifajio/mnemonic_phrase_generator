@@ -1,1 +1,1 @@
-import Mnemonic
+from seed_generator import Mnemonic
