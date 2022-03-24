@@ -19,6 +19,7 @@ pip install -r requirements.txt
 from seed_generator import Mnemonic
 mnem = Mnemonic()
 phrase = mnem.generate()
+address = mnem.get_address(phrase)
 ```
 
 ##### Syntax
@@ -30,6 +31,13 @@ mnem = Mnemonic(word_count=12)
 ```
 
 > `word_count` - number of words in a phrase
+
+```python
+address = mnem.get_address(phrase, derivation_path='44/60/0/0')
+```
+
+> `derivation_path` - derivation_path.
+
 
 #### TODO
 
